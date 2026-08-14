@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produk | PT Visi Tama Gemilang</title>
+  <meta name="description" content="Jelajahi produk audio visual Insight serta rangkaian smart security yang tersedia melalui PT Visi Tama Gemilang.">
+  <link rel="icon" type="image/png" href="assets/images/logo-vtg.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="overflow-x-hidden bg-white font-sans text-ink antialiased">
+  <!-- Tautan aksesibilitas untuk melewati navigasi. -->
+  <a href="#konten" class="fixed left-4 top-4 z-[60] -translate-y-24 rounded-full bg-white px-5 py-3 text-sm font-bold shadow-soft transition focus:translate-y-0">Lewati ke konten</a>
+  <!-- Navigasi utama; menu mobile dikendalikan oleh js/main.js. -->
+  <header class="sticky top-0 z-50 border-b border-line/80 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Navigasi utama">
+      <a href="index.html" class="flex items-center gap-3" aria-label="PT Visi Tama Gemilang - Beranda"><img src="assets/images/logo-vtg.png" alt="Logo PT Visi Tama Gemilang" class="h-10 w-auto sm:h-12"></a>
+      <div class="hidden items-center gap-8 md:flex"><a href="index.html" class="border-b-2 border-transparent pb-1 text-sm font-semibold text-muted transition hover:border-cyan hover:text-ink">Beranda</a><a href="about.html" class="border-b-2 border-transparent pb-1 text-sm font-semibold text-muted transition hover:border-cyan hover:text-ink">Tentang Kami</a><a href="produk.html" aria-current="page" class="border-b-2 border-magenta pb-1 text-sm font-bold text-ink">Produk</a><a href="contact.html" class="rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-navy">Kontak</a></div>
+      <button type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line text-2xl text-ink md:hidden" aria-label="Buka menu navigasi">☰</button>
+    </nav>
+    <div id="mobile-menu" data-mobile-menu class="hidden border-t border-line bg-white px-5 py-5 md:hidden"><div class="mx-auto grid max-w-7xl gap-2"><a href="index.html" class="rounded-xl px-4 py-3 font-semibold text-muted hover:bg-paper hover:text-ink">Beranda</a><a href="about.html" class="rounded-xl px-4 py-3 font-semibold text-muted hover:bg-paper hover:text-ink">Tentang Kami</a><a href="produk.html" aria-current="page" class="rounded-xl bg-paper px-4 py-3 font-bold text-ink">Produk</a><a href="contact.html" class="rounded-xl bg-ink px-4 py-3 font-bold text-white">Kontak</a></div></div>
+  </header>
+
+  <main id="konten">
+    <!-- Hero Produk: kolom kiri berisi pengantar, kolom kanan adalah slider katalog. -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-white via-cyan/10 to-green/10 text-ink">
+      <div class="absolute -left-24 -top-24 h-64 w-64 rounded-full border-[38px] border-magenta/15" aria-hidden="true"></div>
+      <div class="absolute -bottom-28 right-1/3 h-60 w-60 rotate-45 border-[34px] border-green/15" aria-hidden="true"></div>
+      <div class="absolute right-8 top-16 h-28 w-28 rounded-full bg-cyan/15 blur-2xl" aria-hidden="true"></div>
+      <div class="relative mx-auto grid min-h-[700px] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[.95fr_1.05fr] lg:px-8 lg:py-20">
+        <div class="relative z-10">
+          <p class="text-xs font-black uppercase tracking-[0.24em] text-cyan">Katalog produk Insight</p>
+          <h1 class="mt-5 text-4xl font-black leading-[1.04] tracking-[-0.04em] sm:text-5xl lg:text-6xl">Produk audio visual untuk ruang yang lebih terhubung.</h1>
+          <p class="mt-6 max-w-xl text-base leading-8 text-muted">Jelajahi rangkaian LED display, digital signage, perangkat konferensi, interactive panel, serta aksesori pendukung langsung dari katalog produk Insight.</p>
+          <a href="INSIGHT%20Product%20%23Katalog%20%23Rev_02.pdf" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex rounded-full bg-magenta px-6 py-3.5 text-sm font-black text-white shadow-soft transition hover:bg-ink">Buka katalog lengkap <span class="ml-2" aria-hidden="true">↗</span></a>
+        </div>
+
+        <!-- Atribut data-product-* menghubungkan elemen HTML ini dengan logika slider di js/main.js. -->
+        <div data-product-slider class="relative z-10 mx-auto w-full max-w-xl" role="region" aria-roledescription="carousel" aria-label="Galeri produk Insight" tabindex="0">
+          <div class="relative overflow-hidden rounded-[2rem] border border-magenta/15 bg-white p-3 shadow-soft sm:p-4">
+            <a data-product-link href="INSIGHT%20Product%20%23Katalog%20%23Rev_02.pdf#page=2" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-[1.25rem] bg-white" aria-label="Buka LED Videotron Indoor di katalog Insight">
+              <img data-product-image src="assets/images/insight/insight-product-02.jpg" alt="LED Videotron Indoor Insight" class="mx-auto h-[430px] w-full object-contain opacity-100 transition duration-300 sm:h-[500px] lg:h-[540px]" loading="eager">
+            </a>
+            <div class="absolute inset-x-6 bottom-6 flex items-center justify-between gap-4 rounded-2xl bg-ink/90 px-4 py-3 text-white backdrop-blur sm:inset-x-8 sm:bottom-8">
+              <div class="min-w-0"><p data-product-title class="truncate text-sm font-black sm:text-base">LED Videotron Indoor</p><p class="mt-0.5 text-xs text-white/60">Insight Audio Visual Solutions</p></div>
+              <p data-product-index class="shrink-0 text-xs font-black tracking-[0.16em] text-cyan">01 / 22</p>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-4">
+            <div class="h-1 flex-1 overflow-hidden rounded-full bg-ink/10"><span data-product-progress class="block h-full origin-left bg-cyan transition-transform duration-300" style="transform: scaleX(0.0455)"></span></div>
+            <div class="flex gap-2">
+              <button data-product-prev type="button" class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-magenta/25 bg-white text-xl text-ink transition hover:border-cyan hover:bg-cyan" aria-label="Produk sebelumnya">←</button>
+              <button data-product-next type="button" class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-magenta text-xl text-white shadow-soft transition hover:bg-ink" aria-label="Produk berikutnya">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori membantu pengunjung memahami kelompok produk tanpa membuka PDF. -->
+    <section class="py-20 lg:py-28" aria-labelledby="kategori-produk">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="max-w-3xl"><p class="text-xs font-black uppercase tracking-[0.24em] text-magenta">Kategori produk</p><h2 id="kategori-produk" class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Pilihan untuk kebutuhan visual dan kolaborasi.</h2></div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2">
+          <article class="relative overflow-hidden rounded-[2rem] border border-line bg-paper p-8 sm:p-10"><span class="absolute right-7 top-5 text-7xl font-black text-cyan/20">01</span><p class="text-xs font-black uppercase tracking-[0.2em] text-cyan">Display profesional</p><h3 class="mt-7 text-3xl font-black">LED & Videowall</h3><p class="mt-4 max-w-lg leading-8 text-muted">LED videotron indoor dan outdoor, videowall, fine pixel pitch, LED banner, serta LED transparent.</p></article>
+          <article class="relative overflow-hidden rounded-[2rem] border border-line bg-white p-8 shadow-soft sm:p-10"><span class="absolute right-7 top-5 text-7xl font-black text-magenta/15">02</span><p class="text-xs font-black uppercase tracking-[0.2em] text-magenta">Informasi digital</p><h3 class="mt-7 text-3xl font-black">Signage & Kiosk</h3><p class="mt-4 max-w-lg leading-8 text-muted">Wallmount digital signage, standing kiosk, table kiosk, dan mesin antrian untuk ruang publik.</p></article>
+          <article class="relative overflow-hidden rounded-[2rem] border border-line bg-white p-8 shadow-soft sm:p-10"><span class="absolute right-7 top-5 text-7xl font-black text-green/15">03</span><p class="text-xs font-black uppercase tracking-[0.2em] text-green">Ruang kolaborasi</p><h3 class="mt-7 text-3xl font-black">Conference & Interactive</h3><p class="mt-4 max-w-lg leading-8 text-muted">PTZ camera, webcam, wireless microphone, interactive flat panel, LED all-in-one, dan smart podium.</p></article>
+          <article class="relative overflow-hidden rounded-[2rem] bg-ink p-8 text-white sm:p-10"><span class="absolute right-7 top-5 text-7xl font-black text-cyan/15">04</span><p class="text-xs font-black uppercase tracking-[0.2em] text-cyan">Perangkat pendukung</p><h3 class="mt-7 text-3xl font-black">Processor & Aksesori</h3><p class="mt-4 max-w-lg leading-8 text-slate-300">Video processor, speaker, HDMI extender dan cable, Mini PC & OPS, serta berbagai bracket display.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-paper py-20 lg:py-28" aria-labelledby="solusi-produk">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="max-w-3xl"><p class="text-xs font-black uppercase tracking-[0.24em] text-green">Rangkaian solusi produk</p><h2 id="solusi-produk" class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Pilihan yang tercantum dalam katalog.</h2><p class="mt-5 leading-7 text-muted">Ketersediaan dan spesifikasi produk perlu dikonfirmasi langsung kepada PT Visi Tama Gemilang.</p></div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <article class="rounded-[2rem] bg-white p-7 shadow-soft sm:p-9">
+            <div class="flex items-center justify-between gap-4 border-b border-line pb-6"><div><p class="text-xs font-black uppercase tracking-[0.2em] text-cyan">Insight</p><h3 class="mt-2 text-2xl font-black">Audio Visual Solutions</h3></div><span class="rounded-full bg-cyan/10 px-4 py-2 text-xs font-black text-ink">Katalog produk</span></div>
+            <ul class="mt-7 flex flex-wrap gap-2.5 text-sm text-muted" aria-label="Produk audio visual">
+              <li class="rounded-full border border-line px-4 py-2">LED Videotron Indoor</li><li class="rounded-full border border-line px-4 py-2">LED Videotron Outdoor</li><li class="rounded-full border border-line px-4 py-2">LED Videowall</li><li class="rounded-full border border-line px-4 py-2">Fine Pixel Pitch LED Display</li><li class="rounded-full border border-line px-4 py-2">Wallmount Digital Signage</li><li class="rounded-full border border-line px-4 py-2">LED Banner</li><li class="rounded-full border border-line px-4 py-2">LED Transparent</li><li class="rounded-full border border-line px-4 py-2">Standing Kiosk</li><li class="rounded-full border border-line px-4 py-2">Table Kiosk</li><li class="rounded-full border border-line px-4 py-2">PTZ Video Camera Conference</li><li class="rounded-full border border-line px-4 py-2">Conference Webcam</li><li class="rounded-full border border-line px-4 py-2">Wireless Mic Conference</li><li class="rounded-full border border-line px-4 py-2">LED All in One</li><li class="rounded-full border border-line px-4 py-2">Interactive Flat Panel</li><li class="rounded-full border border-line px-4 py-2">Smart Podium</li><li class="rounded-full border border-line px-4 py-2">Mesin Antrian</li><li class="rounded-full border border-line px-4 py-2">Video Processor</li><li class="rounded-full border border-line px-4 py-2">Speaker</li><li class="rounded-full border border-line px-4 py-2">HDMI Extender & Cable</li><li class="rounded-full border border-line px-4 py-2">Mini PC & OPS</li><li class="rounded-full border border-line px-4 py-2">Bracket</li>
+            </ul>
+          </article>
+          <article class="rounded-[2rem] bg-ink p-7 text-white shadow-soft sm:p-9">
+            <div class="flex items-center justify-between gap-4 border-b border-white/10 pb-6"><div><p class="text-xs font-black uppercase tracking-[0.2em] text-magenta">Hikvision</p><h3 class="mt-2 text-2xl font-black">Smart Solutions</h3></div><span class="rounded-full bg-white/10 px-4 py-2 text-xs font-black">Katalog 2023</span></div>
+            <ul class="mt-7 grid gap-3 sm:grid-cols-2" aria-label="Kategori smart solution">
+              <li class="rounded-2xl border border-white/10 p-4"><span class="font-bold">CCTV</span><p class="mt-1 text-sm text-slate-400">Rangkaian kamera dan perangkat pemantauan.</p></li>
+              <li class="rounded-2xl border border-white/10 p-4"><span class="font-bold">Access</span><p class="mt-1 text-sm text-slate-400">Perangkat dalam kategori kontrol akses.</p></li>
+              <li class="rounded-2xl border border-white/10 p-4"><span class="font-bold">Switch</span><p class="mt-1 text-sm text-slate-400">Rangkaian perangkat switch dalam katalog.</p></li>
+              <li class="rounded-2xl border border-white/10 p-4"><span class="font-bold">Transportation</span><p class="mt-1 text-sm text-slate-400">Perangkat solusi transportasi.</p></li>
+              <li class="rounded-2xl border border-white/10 p-4"><span class="font-bold">Parking</span><p class="mt-1 text-sm text-slate-400">Perangkat solusi area parkir.</p></li>
+              <li class="rounded-2xl border border-white/10 p-4"><span class="font-bold">Security</span><p class="mt-1 text-sm text-slate-400">Perangkat penunjang sistem keamanan.</p></li>
+              <li class="rounded-2xl border border-white/10 p-4 sm:col-span-2"><span class="font-bold">LED</span><p class="mt-1 text-sm text-slate-400">Pilihan perangkat display LED.</p></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 lg:py-28">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.75fr_1.25fr] lg:items-start lg:px-8">
+        <div><p class="text-xs font-black uppercase tracking-[0.24em] text-magenta">Skenario penerapan</p><h2 class="mt-4 text-4xl font-black tracking-tight">Beragam konteks dalam katalog smart solution.</h2><p class="mt-5 leading-7 text-muted">Katalog memuat solusi berdasarkan skenario berikut tanpa menyatakan bahwa semuanya merupakan proyek PT Visi Tama Gemilang.</p></div>
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="rounded-2xl bg-paper p-5 font-bold">Education</div><div class="rounded-2xl bg-paper p-5 font-bold">Bank</div><div class="rounded-2xl bg-paper p-5 font-bold">Oil & Gas</div><div class="rounded-2xl bg-paper p-5 font-bold">Factories</div><div class="rounded-2xl bg-paper p-5 font-bold">Office</div><div class="rounded-2xl bg-paper p-5 font-bold">Hotel</div><div class="rounded-2xl bg-paper p-5 font-bold">Mall</div><div class="rounded-2xl bg-paper p-5 font-bold">Transportation</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-paper py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center"><div><p class="text-xs font-black uppercase tracking-[0.24em] text-green">Brand solution</p><p class="mt-5 leading-7 text-muted">Daftar berikut disajikan sesuai halaman “Brand Solution” VTG 2026.</p></div><figure class="overflow-hidden rounded-[2rem] border border-line bg-white p-4 shadow-soft sm:p-7"><img src="assets/images/brand-solutions.jpg" alt="Daftar brand solution PT Visi Tama Gemilang" class="w-full rounded-xl" loading="lazy"><figcaption class="mt-4 text-center text-xs text-muted">Sumber: VTG 2026.</figcaption></figure></div>
+      </div>
+    </section>
+
+    <!-- Tautan menuju dokumen sumber asli. -->
+    <section class="py-20 lg:py-28" aria-labelledby="dokumen-produk">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="max-w-3xl"><p class="text-xs font-black uppercase tracking-[0.24em] text-cyan">Dokumen sumber</p><h2 id="dokumen-produk" class="mt-4 text-4xl font-black tracking-tight">Buka informasi produk selengkapnya.</h2></div>
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          <a href="COMPRO%20VTG%202026.pdf" target="_blank" class="group rounded-[1.5rem] border border-line p-6 transition hover:border-magenta hover:shadow-soft"><h3 class="mt-3 text-xl font-black">COMPRO VTG 2026</h3><p class="mt-6 text-sm font-bold">Buka PDF <span class="ml-1 group-hover:ml-2" aria-hidden="true">↗</span></p></a>
+          <a href="INSIGHT%20Product%20%23Katalog%20%23Rev_02.pdf" target="_blank" class="group rounded-[1.5rem] border border-line p-6 transition hover:border-cyan hover:shadow-soft"><p class="text-xs font-black uppercase tracking-[0.18em] text-cyan">Audio visual</p><h3 class="mt-3 text-xl font-black">Katalog Insight</h3><p class="mt-6 text-sm font-bold">Buka PDF <span class="ml-1 group-hover:ml-2" aria-hidden="true">↗</span></p></a>
+          <a href="KATALOG%20SMART%20SOLUTION%202023-compressed.pdf" target="_blank" class="group rounded-[1.5rem] border border-line p-6 transition hover:border-green hover:shadow-soft"><p class="text-xs font-black uppercase tracking-[0.18em] text-green">Smart solution</p><h3 class="mt-3 text-xl font-black">Katalog Hikvision 2023</h3><p class="mt-6 text-sm font-bold">Buka PDF <span class="ml-1 group-hover:ml-2" aria-hidden="true">↗</span></p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 pb-20 lg:px-8 lg:pb-28"><div class="mx-auto flex max-w-7xl flex-col gap-8 rounded-[2rem] bg-ink p-8 text-white sm:p-12 lg:flex-row lg:items-center lg:justify-between lg:p-16"><div class="max-w-2xl"><p class="text-xs font-black uppercase tracking-[0.24em] text-cyan">Konsultasi produk</p><h2 class="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Cari solusi untuk kebutuhan Anda.</h2></div><a href="contact.html" class="inline-flex shrink-0 self-start rounded-full bg-white px-7 py-4 text-sm font-black text-ink transition hover:bg-cyan lg:self-auto">Hubungi kami <span class="ml-2" aria-hidden="true">→</span></a></div></section>
+  </main>
+
+  <!-- Footer konsisten pada seluruh halaman. -->
+  <footer class="border-t border-line bg-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-[1.2fr_.7fr_1fr] lg:px-8"><div><img src="assets/images/logo-vtg.png" alt="PT Visi Tama Gemilang" class="h-12 w-auto"><p class="mt-5 max-w-md leading-7 text-muted">Retail elektronik untuk kebutuhan komputer, mesin, telekomunikasi, dan sistem keamanan.</p></div><div><h2 class="text-sm font-black uppercase tracking-[0.18em]">Navigasi</h2><div class="mt-5 grid gap-3 text-sm text-muted"><a href="index.html" class="hover:text-ink">Beranda</a><a href="about.html" class="hover:text-ink">Tentang Kami</a><a href="produk.html" class="hover:text-ink">Produk</a><a href="contact.html" class="hover:text-ink">Kontak</a></div></div><div><h2 class="text-sm font-black uppercase tracking-[0.18em]">Kontak</h2><address class="mt-5 not-italic leading-7 text-muted">Jl. Raya Kebon Jeruk Blok D21/10<br>RT 004 / RW 03, Kebon Jeruk<br>Jakarta Barat 11650</address><a href="https://wa.me/6281295393500" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block font-bold text-ink">+62 812-9539-3500</a></div></div>
+    <div class="border-t border-line"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between lg:px-8"><p>© <span data-year>2026</span> PT Visi Tama Gemilang.</p><p>Jakarta Barat, Indonesia.</p></div></div>
+  </footer>
+</body>
+</html>

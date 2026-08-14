@@ -1,0 +1,7 @@
+# File metadata macOS yang tidak dibutuhkan oleh website.
+.DS_Store
+
+# File editor sementara dan log lokal.
+*.swp
+*.swo
+*.log

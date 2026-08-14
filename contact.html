@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak | PT Visi Tama Gemilang</title>
+  <meta name="description" content="Hubungi PT Visi Tama Gemilang di Kebon Jeruk, Jakarta Barat melalui WhatsApp untuk informasi kebutuhan teknologi dan elektronik.">
+  <link rel="icon" type="image/png" href="assets/images/logo-vtg.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="overflow-x-hidden bg-white font-sans text-ink antialiased">
+  <!-- Tautan aksesibilitas untuk melewati navigasi. -->
+  <a href="#konten" class="fixed left-4 top-4 z-[60] -translate-y-24 rounded-full bg-white px-5 py-3 text-sm font-bold shadow-soft transition focus:translate-y-0">Lewati ke konten</a>
+  <!-- Navigasi utama; menu mobile dikendalikan oleh js/main.js. -->
+  <header class="sticky top-0 z-50 border-b border-line/80 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Navigasi utama">
+      <a href="index.html" class="flex items-center gap-3" aria-label="PT Visi Tama Gemilang - Beranda"><img src="assets/images/logo-vtg.png" alt="Logo PT Visi Tama Gemilang" class="h-10 w-auto sm:h-12"></a>
+      <div class="hidden items-center gap-8 md:flex"><a href="index.html" class="border-b-2 border-transparent pb-1 text-sm font-semibold text-muted transition hover:border-cyan hover:text-ink">Beranda</a><a href="about.html" class="border-b-2 border-transparent pb-1 text-sm font-semibold text-muted transition hover:border-cyan hover:text-ink">Tentang Kami</a><a href="produk.html" class="border-b-2 border-transparent pb-1 text-sm font-semibold text-muted transition hover:border-cyan hover:text-ink">Produk</a><a href="contact.html" aria-current="page" class="rounded-full bg-magenta px-5 py-3 text-sm font-bold text-white transition hover:bg-ink">Kontak</a></div>
+      <button type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line text-2xl text-ink md:hidden" aria-label="Buka menu navigasi">☰</button>
+    </nav>
+    <div id="mobile-menu" data-mobile-menu class="hidden border-t border-line bg-white px-5 py-5 md:hidden"><div class="mx-auto grid max-w-7xl gap-2"><a href="index.html" class="rounded-xl px-4 py-3 font-semibold text-muted hover:bg-paper hover:text-ink">Beranda</a><a href="about.html" class="rounded-xl px-4 py-3 font-semibold text-muted hover:bg-paper hover:text-ink">Tentang Kami</a><a href="produk.html" class="rounded-xl px-4 py-3 font-semibold text-muted hover:bg-paper hover:text-ink">Produk</a><a href="contact.html" aria-current="page" class="rounded-xl bg-ink px-4 py-3 font-bold text-white">Kontak</a></div></div>
+  </header>
+
+  <main id="konten">
+    <!-- Hero halaman Kontak. -->
+    <section class="relative overflow-hidden bg-paper">
+      <div class="absolute -bottom-20 -right-16 h-52 w-52 rounded-full border-[32px] border-magenta/10" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1.1fr_.9fr] lg:items-end lg:px-8 lg:py-28">
+        <div><p class="text-xs font-black uppercase tracking-[0.24em] text-magenta">Kontak</p><h1 class="mt-5 max-w-4xl text-5xl font-black leading-[1.04] tracking-[-0.045em] sm:text-6xl">Mari mulai dari kebutuhan Anda.</h1></div>
+        <p class="max-w-xl text-lg leading-8 text-muted">Untuk pertanyaan produk, kebutuhan proyek, atau konsultasi solusi elektronik, hubungi PT Visi Tama Gemilang melalui informasi yang tercantum di bawah.</p>
+      </div>
+    </section>
+
+    <section class="py-20 lg:py-28">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[.8fr_1.2fr] lg:gap-14 lg:px-8">
+        <aside class="space-y-5" aria-labelledby="informasi-kontak">
+          <div class="mb-8"><p class="text-xs font-black uppercase tracking-[0.24em] text-green">Informasi perusahaan</p><h2 id="informasi-kontak" class="mt-4 text-3xl font-black tracking-tight">Kontak yang tersedia.</h2></div>
+          <article class="rounded-[1.75rem] bg-ink p-7 text-white">
+            <p class="text-xs font-black uppercase tracking-[0.2em] text-cyan">Alamat</p>
+            <address class="mt-4 not-italic text-lg font-semibold leading-8">Jl. Raya Kebon Jeruk Blok D21/10<br>RT 004 / RW 03<br>Kebon Jeruk, Jakarta Barat 11650</address>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Jl.%20Raya%20Kebon%20Jeruk%20Blok%20D21%2F10%20Jakarta%20Barat%2011650" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex border-b border-cyan pb-1 text-sm font-black text-cyan">Buka di Google Maps <span class="ml-2" aria-hidden="true">↗</span></a>
+          </article>
+          <article class="rounded-[1.75rem] border border-line bg-white p-7 shadow-soft">
+            <p class="text-xs font-black uppercase tracking-[0.2em] text-magenta">Telepon / WhatsApp</p>
+            <a href="https://wa.me/6281295393500" target="_blank" rel="noopener noreferrer" class="mt-4 block text-2xl font-black tracking-tight">+62 812-9539-3500</a>
+            <p class="mt-3 text-sm leading-6 text-muted">Nomor kontak yang tercantum dalam data perusahaan.</p>
+          </article>
+          <div class="rounded-[1.75rem] bg-paper p-7"><h3 class="font-black">Ruang lingkup kebutuhan</h3><ul class="mt-4 grid gap-3 text-sm text-muted"><li>— Komputer dan perlengkapannya</li><li>— Mesin perkantoran dan perindustrian</li><li>— Peralatan telekomunikasi</li><li>— CCTV dan security system</li></ul></div>
+        </aside>
+
+        <section class="rounded-[2rem] border border-line bg-white p-6 shadow-soft sm:p-9 lg:p-12" aria-labelledby="form-kontak">
+          <p class="text-xs font-black uppercase tracking-[0.24em] text-cyan">Form kontak</p>
+          <h2 id="form-kontak" class="mt-4 text-3xl font-black tracking-tight">Tuliskan kebutuhan Anda.</h2>
+          <p class="mt-4 leading-7 text-muted">Form ini menyediakan validasi di sisi browser, tetapi belum terhubung ke sistem pengiriman. Gunakan WhatsApp agar pesan benar-benar diteruskan.</p>
+          <form data-contact-form class="mt-9" novalidate>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="sm:col-span-2"><label for="nama" class="mb-2 block text-sm font-bold">Nama <span class="text-magenta" aria-hidden="true">*</span></label><input id="nama" name="nama" type="text" autocomplete="name" required minlength="2" class="w-full rounded-2xl border border-line bg-paper px-4 py-3.5 text-ink outline-none transition placeholder:text-slate-400 focus:border-cyan focus:ring-4 focus:ring-cyan/10" placeholder="Nama lengkap"></div>
+              <div><label for="email" class="mb-2 block text-sm font-bold">Email <span class="text-magenta" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-2xl border border-line bg-paper px-4 py-3.5 text-ink outline-none transition placeholder:text-slate-400 focus:border-cyan focus:ring-4 focus:ring-cyan/10" placeholder="nama@perusahaan.com"></div>
+              <div><label for="telepon" class="mb-2 block text-sm font-bold">Nomor telepon <span class="text-magenta" aria-hidden="true">*</span></label><input id="telepon" name="telepon" type="tel" autocomplete="tel" required minlength="8" pattern="[0-9+() -]{8,}" class="w-full rounded-2xl border border-line bg-paper px-4 py-3.5 text-ink outline-none transition placeholder:text-slate-400 focus:border-cyan focus:ring-4 focus:ring-cyan/10" placeholder="Nomor yang dapat dihubungi"></div>
+              <div class="sm:col-span-2"><label for="pesan" class="mb-2 block text-sm font-bold">Pesan <span class="text-magenta" aria-hidden="true">*</span></label><textarea id="pesan" name="pesan" required minlength="10" rows="6" class="w-full resize-y rounded-2xl border border-line bg-paper px-4 py-3.5 text-ink outline-none transition placeholder:text-slate-400 focus:border-cyan focus:ring-4 focus:ring-cyan/10" placeholder="Ceritakan produk atau solusi yang Anda butuhkan"></textarea></div>
+            </div>
+            <button type="submit" class="mt-7 inline-flex w-full items-center justify-center rounded-full bg-ink px-7 py-4 text-sm font-black text-white transition hover:bg-navy sm:w-auto">Periksa pesan <span class="ml-2" aria-hidden="true">→</span></button>
+            <p data-form-status role="status" aria-live="polite" class="mt-5 text-sm leading-6 text-muted">Belum ada data yang dikirim.</p>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="bg-ink py-20 text-white lg:py-24">
+      <div class="mx-auto flex max-w-7xl flex-col gap-8 px-5 lg:flex-row lg:items-center lg:justify-between lg:px-8"><div class="max-w-3xl"><p class="text-xs font-black uppercase tracking-[0.24em] text-cyan">Kanal langsung</p><h2 class="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Butuh menghubungi PT Visi Tama Gemilang sekarang?</h2></div><a href="https://wa.me/6281295393500" target="_blank" rel="noopener noreferrer" class="inline-flex shrink-0 self-start rounded-full bg-white px-7 py-4 text-sm font-black text-ink transition hover:bg-cyan lg:self-auto">Buka WhatsApp <span class="ml-2" aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <!-- Footer konsisten pada seluruh halaman. -->
+  <footer class="border-t border-line bg-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-[1.2fr_.7fr_1fr] lg:px-8"><div><img src="assets/images/logo-vtg.png" alt="PT Visi Tama Gemilang" class="h-12 w-auto"><p class="mt-5 max-w-md leading-7 text-muted">Retail elektronik untuk kebutuhan komputer, mesin, telekomunikasi, dan sistem keamanan.</p></div><div><h2 class="text-sm font-black uppercase tracking-[0.18em]">Navigasi</h2><div class="mt-5 grid gap-3 text-sm text-muted"><a href="index.html" class="hover:text-ink">Beranda</a><a href="about.html" class="hover:text-ink">Tentang Kami</a><a href="produk.html" class="hover:text-ink">Produk</a><a href="contact.html" class="hover:text-ink">Kontak</a></div></div><div><h2 class="text-sm font-black uppercase tracking-[0.18em]">Kontak</h2><address class="mt-5 not-italic leading-7 text-muted">Jl. Raya Kebon Jeruk Blok D21/10<br>RT 004 / RW 03, Kebon Jeruk<br>Jakarta Barat 11650</address><a href="https://wa.me/6281295393500" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block font-bold text-ink">+62 812-9539-3500</a></div></div>
+    <div class="border-t border-line"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between lg:px-8"><p>© <span data-year>2026</span> PT Visi Tama Gemilang.</p><p>Jakarta Barat, Indonesia.</p></div></div>
+  </footer>
+</body>
+</html>
