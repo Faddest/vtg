@@ -150,30 +150,4 @@ document.addEventListener("DOMContentLoaded", () => {
     startAutoPlay();
   }
 
-  // ---------------------------------------------------------------------------
-  // Validasi form kontak
-  // Form belum mengirim data ke server; setelah valid pengguna diarahkan ke WA.
-  // ---------------------------------------------------------------------------
-  const contactForm = document.querySelector("[data-contact-form]");
-  if (contactForm) {
-    const status = document.querySelector("[data-form-status]");
-
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      if (!contactForm.checkValidity()) {
-        contactForm.reportValidity();
-        if (status) {
-          status.textContent = "Mohon lengkapi semua kolom wajib dengan format yang benar.";
-          status.className = "mt-5 rounded-2xl border border-magenta/30 bg-magenta/5 p-4 text-sm text-ink";
-        }
-        return;
-      }
-
-      if (status) {
-        status.innerHTML = 'Data formulir sudah valid, tetapi belum dikirim karena situs ini belum terhubung ke backend. Silakan lanjutkan melalui <a class="font-bold text-ink underline decoration-cyan decoration-2 underline-offset-4" href="https://wa.me/6281295393500" target="_blank" rel="noopener noreferrer">WhatsApp PT Visi Tama Gemilang</a>.';
-        status.className = "mt-5 rounded-2xl border border-cyan/40 bg-cyan/10 p-4 text-sm leading-6 text-ink";
-      }
-    });
-  }
 });
